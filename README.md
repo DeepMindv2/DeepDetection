@@ -65,4 +65,5 @@ Implented a cohort of Data Augmentation strategies. I found it best to just use 
 # Next Steps
 - Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.
 - Developing an ensemble of these CNN models 
+- Creating a cache method to speed training of models
 

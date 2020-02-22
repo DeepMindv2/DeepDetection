@@ -59,11 +59,10 @@ Implented a cohort of Data Augmentation strategies. I found it best to just use 
 # Model
 - DenseNet
 - ResNet
-- 
-
-# Heat Maps
 
 # Evaluation
 
-# References 
+# Next Steps
+- Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.
+- Developing an ensemble of these CNN models 
 

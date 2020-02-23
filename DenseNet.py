@@ -38,7 +38,7 @@ def train_DenseNet121():
 
         model = Model(inputs=base_model.input, outputs=predictions)
 
-        #load_weights(model)
+        load_weights(model)
 
         model.compile(loss=LOSS,
                           optimizer=OPTIMIZER,

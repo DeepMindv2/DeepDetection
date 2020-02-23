@@ -1,12 +1,11 @@
 # DeepDetection_2
-Pneumonia detection using a variety of Convolutional Neural Networks. Bayesian Classifiers are also tested. 
+Pneumonia detection using a variety of Convolutional Neural Networks. Bayesian Classifiers will also be tested. 
 
 # Overview
 The repository contains various Neural Network Architectures used in the training of Pnemonia classification. 
 
 # Code Flow
 ```
-
 - configs.py # Centralizes all hyperparameters for models and augmentations
 
 - DenseNet.py # Various DenseNet Model definitions
@@ -17,6 +16,7 @@ The repository contains various Neural Network Architectures used in the trainin
 - DataAug.py # generator for train/test 
 - keras_tuner.py # 
 - Visualization.py # Various visualization functions 
+- EDA2.py # Inspection of Dataset 
 
 ```
 
@@ -73,6 +73,8 @@ python3 DataAug.py
 - VGG
 
 # Evaluation
+
+
 
 # Next Steps
 - Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.

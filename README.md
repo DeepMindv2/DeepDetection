@@ -14,12 +14,11 @@ The repository contains various Neural Network Architectures used in the trainin
 - VanillaCNN.py # Simple Convolutional Neural Network
 
 - DataAug.py # generator for train/test 
-- keras_tuner.py # 
+- keras_tuner.py # Bayesian Optimization of Optimizer and Loss Functions 
 - Visualization.py # Various visualization functions 
 - EDA2.py # Inspection of Dataset 
 
 ```
-
 
 # Data
 The Pneumonia dataset was from Kaggle. The dataset contained 5,863 X-ray images. The dataset contained only 2 categories, Normal and Pneumonia. The dataset is roughly 3 GB in size. 
@@ -68,11 +67,12 @@ python3 Keras_Tuner.py
 
 # Model
 - DenseNet
+
 - ResNet
 - VGG
 
 # Evaluation
-
+Due to compute issues I was not able to train all the networks. I was also not able to implement a wide Bayesian Optimization search. 
 
 
 # Next Steps

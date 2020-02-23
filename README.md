@@ -43,7 +43,18 @@ A large class imbalance on the original dataset was noticed, in the train and te
 # Data Augmentation
 Implented a cohort of Data Augmentation strategies. I found it best to just use all of them. Using the Keras-Tuner library I did a Random Search as well as a Bayesian Optimization to see which if not all Augmentation strategies yield the highest accuracies. 
 
+- Rescale = 1./255
+- Rotation Range = 45
+- ZCA Whitening
+- Zoom Range = 0.5
+- Horizontal Flip
+- Vertical Flip
+- Width Shift Range = .15
+- Height Shift Range = .15
 
+```
+python3 DataAug.py
+```
 
 # Software
 - Tensorflow 2.1
@@ -59,6 +70,7 @@ Implented a cohort of Data Augmentation strategies. I found it best to just use 
 # Model
 - DenseNet
 - ResNet
+- VGG
 
 # Evaluation
 

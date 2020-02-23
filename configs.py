@@ -4,7 +4,6 @@
 CD = 'cd /Users/ryanjoseph/Desktop/Yale/Repositories/Pneumonia/Multi_Chest/Scripts'
 
 # Dataset
-MNIST_FASHION = False
 MULTI_CHEST = True
 
 
@@ -17,24 +16,26 @@ WEIGHTS_DIR = '/Users/ryanjoseph/Desktop/Yale/Repositories/Pneumonia/Multi_Chest
 CLASS_NAMES = ['PNEUMONIA', 'NORMAL']
 
 #Preprocessing
-IMG_WIDTH = 128
-IMG_HEIGHT = 128
+IMG_WIDTH = 64
+IMG_HEIGHT = 64
 IMG_SHAPE = (IMG_HEIGHT,IMG_WIDTH,3)
 TARGET_SIZE = (IMG_HEIGHT,IMG_WIDTH)
 
 
 # Models
-BIG_CNN = True
+BIG_CNN = False
 SMALL_CNN = False
 DENSENET121 = True
 DENSENET169 = False
+VGG16 = False
 
 
 # Model HyperParameters
-BATCH_SIZE = 340
-EPOCHS = 20
+BATCH_SIZE = 333
+EPOCHS = 2
 STEPS_PER_EPOCH = IMG_HEIGHT // BATCH_SIZE
 LR = 0.1
+DECAY = 1e-5
 
 
 CYCLICAL_LR = False
@@ -42,10 +43,10 @@ EARLY_STOPPING = False
 OPTIMIZER = 'Adam'
 LOSS = 'binary_crossentropy'
 MODEL_FINAL_ACTIVATION = 'sigmoid'
-BASE_MODEL_TRAINABLE = True
+BASE_MODEL_TRAINABLE = False
 
 # Augmentation
-DATA_AUGMENTATION = True
+DATA_AUGMENTATION = False
 ROTATION_RANGE = 45
 ZCA_WHITENING = False
 ZOOM_RANGE = 0.5
@@ -55,13 +56,13 @@ WIDTH_SHIFT_RANGE = .15
 HEIGH_SHIFT_RANGE = .15
 
 # Metrics
-METRICS = ['accuracy']
+METRICS = ['accuracy', 'AUC', 'Precision', 'Recall']
 SEED = 3
 
 # Visualization
-PLOT_LEARNING = True
+PLOT_LEARNING = False
 PLOT_TESTING = False
-MODEL = 'DENSENET-121-Adam'
+MODEL = f'DenseNet121'
 TENSORBOARD = 'tensorboard --logdir=logs/'
 
 

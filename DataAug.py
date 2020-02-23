@@ -23,10 +23,6 @@ elif DATA_AUGMENTATION==False:
     print('No Data Augmentation!')
     image_generator = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1./255)
 
-
-
-
-
 validation_image_generator = ImageDataGenerator(rescale=1./255,
                                                 rotation_range=ROTATION_RANGE,
                                                 zca_whitening=ZCA_WHITENING,

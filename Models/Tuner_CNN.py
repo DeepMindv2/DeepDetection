@@ -11,7 +11,7 @@ from kerastuner.tuners import RandomSearch
 from DataAug import *
 from configs import *
 
-
+#[From Sentdex Video]
 
 def tuning_model(hp):
     model = keras.models.Sequential()

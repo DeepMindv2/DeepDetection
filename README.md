@@ -54,6 +54,7 @@ Implented a cohort of Data Augmentation strategies. I found it best to just use 
 
 ```
 python3 DataAug.py
+python3 Keras_Tuner.py
 ```
 
 # Software
@@ -64,8 +65,6 @@ python3 DataAug.py
 - Scipy
 - mlxtend
 - kerastuner
-
-# Hardware
 
 # Model
 - DenseNet

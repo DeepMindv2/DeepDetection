@@ -35,7 +35,9 @@ https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
 # Exploratory Data Analysis
 A large class imbalance on the original dataset was noticed, in the train and test folders. Extensive data augmentation was needed to get accurate and reliable results. The images come in varying sizes. Of the 4 types of Pneumonia the dataset consisted of only Bacterial and Viral Pneumonia. 
-
+```
+EDA2.ipynb
+```
 ![Training Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.14.26%20PM.png)
 ![Testing Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.14.44%20PM.png)
 

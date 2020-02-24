@@ -74,7 +74,9 @@ python3 Keras_Tuner.py
 - VGG
 
 # Evaluation
-Due to compute issues I was not able to train all the networks. I was also not able to implement a wide Bayesian Optimization search. 
+Due to compute issues I was not able to train all the networks. I was also not able to implement a wide Bayesian Optimization search. Very little training was able to be done on my own. I had to cycle in between training locally on my laptop and Colab. In the future, I'm going to solve this by having a smaller proxy dataset and I am going to do all my preprocessing and Data Augmentation before my training, this was severely hampering the training time. 
+
+![Training Logs]()
 
 
 # Next Steps
@@ -83,12 +85,14 @@ Due to compute issues I was not able to train all the networks. I was also not a
 - Creating a cache method to store dataset to speed up training of models. Pre-processing and Data Augmentation while training heavily relies on the CPU which takes away from the GPU benefits
 - Implenting a Focal Loss, more suitable for imbalanced datasets
 - Label Smoothing (LabelSmoothingCrossEntropy())
+- Batch Normalization
 - Test Rectified Adam, it slowly reduces the learning rate until the variance stabilizes itself
 - Cosine Anneal Learning Rate, this increases and decreases the learning rate which helps avoid(jump) smaller local optimas
 - Figuring out the image size that stores enough information while remaining the small
 - Adding an attention layer would be super interesting, they allow NN to capture longer range dependencies and focus in on more object shapes
 - Implementing more data augmentation strategies I believe is key, more important than the CNN architecture and dropout. Based on this paper, https://arxiv.org/abs/1806.03852v4,
-- Curating and smaller proxy dataset that is representative of the entire dataset, for quick and rapid hyperparameter testing. Based on, https://arxiv.org/abs/1906.04887v1.
+- Curating and smaller proxy dataset that is representative of the entire dataset, for quick and rapid hyperparameter testing. Based on, https://arxiv.org/abs/1906.04887v1.(it would also be more balanced)
+
 
 
 

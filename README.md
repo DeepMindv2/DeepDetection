@@ -79,4 +79,5 @@ Due to compute issues I was not able to train all the networks. I was also not a
 - Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.
 - Developing an ensemble of these CNN models 
 - Creating a cache method to speed training of models
+- Implenting a Focal Loss, more suitable for imbalanced datasets
 

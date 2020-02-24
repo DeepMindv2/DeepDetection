@@ -78,6 +78,16 @@ Due to compute issues I was not able to train all the networks. I was also not a
 # Next Steps
 - Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.
 - Developing an ensemble of these CNN models 
-- Creating a cache method to speed training of models
+- Creating a cache method to store dataset to speed up training of models. Pre-processing and Data Augmentation while training heavily relies on the CPU which takes away from the GPU benefits
 - Implenting a Focal Loss, more suitable for imbalanced datasets
+- Label Smoothing (LabelSmoothingCrossEntropy())
+- Test Rectified Adam, it slowly reduces the learning rate until the variance stabilizes itself
+- Cosine Anneal Learning Rate, this increases and decreases the learning rate which helps avoid(jump) smaller local optimas
+- Figuring out the image size that stores enough information while remaining the small
+- Adding an attention layer would be super interesting, they allow NN to capture longer range dependencies and focus in on more object shapes
+- Implementing more data augmentation strategies I believe is key, more important than the CNN architecture and dropout. Based on this paper, https://arxiv.org/abs/1806.03852v4,
+- Curating and smaller proxy dataset that is representative of the entire dataset, for quick and rapid hyperparameter testing. Based on, https://arxiv.org/abs/1906.04887v1.
+
+
+
 

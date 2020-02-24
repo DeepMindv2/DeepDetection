@@ -69,7 +69,6 @@ python3 Keras_Tuner.py
 
 # Model
 - DenseNet
-
 - ResNet
 - VGG
 
@@ -78,6 +77,9 @@ Due to compute issues I was not able to train all the networks. I was also not a
 
 ![Training Logs](https://github.com/DeepMindv2/DeepDetection_2/blob/master/Screenshots/Screen%20Shot%202020-02-23%20at%208.58.18%20PM.png)
 
+```
+python3 Visualization.py
+```
 
 # Next Steps
 - Implementing Class Activation Maps to see where in the X-ray image the CNN is looking towards.

@@ -76,7 +76,7 @@ python3 Keras_Tuner.py
 # Evaluation
 Due to compute issues I was not able to train all the networks. I was also not able to implement a wide Bayesian Optimization search. Very little training was able to be done on my own. I had to cycle in between training locally on my laptop and Colab. In the future, I'm going to solve this by having a smaller proxy dataset and I am going to do all my preprocessing and Data Augmentation before my training, this was severely hampering the training time. 
 
-![Training Logs]()
+![Training Logs](https://github.com/DeepMindv2/DeepDetection_2/blob/master/Screenshots/Screen%20Shot%202020-02-23%20at%208.58.18%20PM.png)
 
 
 # Next Steps

@@ -17,7 +17,6 @@ from DataAug import *
 from Visualization import *
 from Utils import *
 
-
 # Fixed a bug that made us unable to download the pre-trained weights of models
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -35,12 +34,13 @@ def train_ResNet101():
         base_model = tf.keras.applications.ResNet101(input_shape=IMG_SHAPE,
                                                        include_top=False,
                                                        weights='imagenet')
-        #base_model.summary()
         base_model.trainable = BASE_MODEL_TRAINABLE
 
         x = base_model.output
 
         x = GlobalAveragePooling2D()(x)
+        x = Dense(128, activation='relu')(x)
+        x = Dense(32, activation='relu')(x)
         predictions = Dense(1, activation='sigmoid',name='Final')(x)
 
 

@@ -16,7 +16,6 @@ from configs import *
 from Visualization import *
 
 
-
 def tensorboard():
     print('\n-------- Starting Up Tensorboard! --------\n')
     run = f"{MODEL}-Augmentation_{DATA_AUGMENTATION}-Optimizer_{OPTIMIZER}-LR_{LR}-Loss_{LOSS}-Img_Shape_{IMG_SHAPE}-Time_{time.localtime().tm_min}"
@@ -26,7 +25,6 @@ def tensorboard():
     tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs, histogram_freq=1)
 
     return tensorboard_callback
-
 
 
 def Early_Stopping():
@@ -65,11 +63,6 @@ def save_weights_callback():
 def CSVLOGGER():
     print('Saving all data to CSV')
     #data_aug = 'Data Augmentation: ' + DATA_AUGMENTATION
-
-
-
-
-
 
 
 def ExponentialDecayLR():

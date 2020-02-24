@@ -29,8 +29,8 @@ The images come from a hospital in China, Guangzhou Women and Children’s Medic
 
 https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
-![Pneumonia](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.06.51%20PM.png)
-![Normal](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.07.16%20PM.png)
+![Pneumonia](https://github.com/DeepMindv2/DeepDetection/blob/master/Screenshots/Screen%20Shot%202020-02-22%20at%202.07.16%20PM.png)
+![Normal](https://github.com/DeepMindv2/DeepDetection/blob/master/Screenshots/Screen%20Shot%202020-02-22%20at%202.06.51%20PM.png)
 
 
 # Exploratory Data Analysis
@@ -38,8 +38,8 @@ A large class imbalance on the original dataset was noticed, in the train and te
 ```
 EDA2.ipynb
 ```
-![Training Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.14.26%20PM.png)
-![Testing Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screen%20Shot%202020-02-22%20at%202.14.44%20PM.png)
+![Training Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screenshots/Screen%20Shot%202020-02-22%20at%202.14.26%20PM.png)
+![Testing Class Imbalance](https://github.com/DeepMindv2/DeepDetection/blob/master/Screenshots/Screen%20Shot%202020-02-22%20at%202.14.44%20PM.png)
 
 # Data Augmentation
 Implented a cohort of Data Augmentation strategies. I found it best to just use all of them. Using the Keras-Tuner library I did a Random Search as well as a Bayesian Optimization to see which if not all Augmentation strategies yield the highest accuracies. 
@@ -84,7 +84,7 @@ VGG.py
 # Evaluation
 Due to compute issues I was not able to train all the networks. I was also not able to implement a wide Bayesian Optimization search. Very little training was able to be done on my own. I had to cycle in between training locally on my laptop and Colab. In the future, I'm going to solve this by having a smaller proxy dataset and I am going to do all my preprocessing and Data Augmentation before my training, this was severely hampering the training time. 
 
-![Training Logs](https://github.com/DeepMindv2/DeepDetection_2/blob/master/Screenshots/Screen%20Shot%202020-02-23%20at%208.58.18%20PM.png)
+![Training Logs](https://github.com/DeepMindv2/DeepDetection/blob/master/Screenshots/Screen%20Shot%202020-02-23%20at%208.58.18%20PM.png)
 
 ```
 python3 Visualization.py

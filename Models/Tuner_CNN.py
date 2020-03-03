@@ -12,6 +12,9 @@ from DataAug import *
 from configs import *
 
 #[From Sentdex Video]
+# Excellent explanation on Keras-Tuner 
+# By far my favorite Machine Learning Youtube Contributor
+# Video: https://www.youtube.com/watch?v=vvC15l4CY1Q 
 
 def tuning_model(hp):
     model = keras.models.Sequential()
